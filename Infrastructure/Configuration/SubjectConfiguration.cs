@@ -20,7 +20,7 @@ namespace School.Infrastructure.Configurations
             builder.HasOne(s => s.Teacher)
                 .WithMany()
                 .HasForeignKey(s => s.TeacherId)
-                .OnDelete(DeleteBehavior.Restrict); // Pour éviter suppression en cascade du prof
+                .OnDelete(DeleteBehavior.Restrict); 
         }
     }
 }
