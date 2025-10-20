@@ -11,7 +11,7 @@ namespace School.Infrastructure.Data
         {
         }
 
-        // DbSets pour chaque entité
+       
         public DbSet<Student> Students { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Subject> Subjects { get; set; } 
@@ -19,7 +19,6 @@ namespace School.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Appliquer toutes les configurations dans le dossier Configurations
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
